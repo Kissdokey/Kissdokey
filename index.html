@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="icon" href="favicon copy.ico" />
+    <title>I LOVE YOU</title>
+    <script defer="defer" src="./js/chunk-vendors.9d375cbd.js"></script>
+    <script defer="defer" src="./js/app.f988d7f4.js"></script>
+    <link href="./css/chunk-vendors.ab49d789.css" rel="stylesheet" />
+    <link href="./css/app.5140ad57.css" rel="stylesheet" />
+  </head>
+  <body style="overflow: hidden">
+    <span class="js-cursor-container"></span>
+    <div id="app"></div>
+    <script src="https://eqcn.ajz.miesnfu.com/wp-content/plugins/wp-3d-pony/live2dw/lib/L2Dwidget.min.js"></script>
+    <script>
+      L2Dwidget.init({
+        model: {
+          jsonPath:
+            "https://unpkg.com/live2d-widget-model-koharu@1.0.5/assets/koharu.model.json",
+          scale: 1,
+        },
+        display: {
+          position: "left",
+          width: 100,
+          height: 200,
+          hOffset: 0,
+          vOffset: -70,
+        },
+        mobile: {
+          show: true,
+          scale: 0.7,
+        },
+        react: {
+          opacityDefault: 1,
+          opacityOnHover: 1,
+        },
+      });
+    </script>
+    <script id="sukura" src="./sukura.js"></script>
+    <script src="./tuowei.js"></script>
+    <script src="./cursor.js"></script>
+    <div
+      style="
+        font-size: small;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 50px;
+        height: 30px;
+        background-color: pink;
+        z-index: 3;
+        border-radius: 0 15px 15px 0;
+      "
+    >
+      Music
+    </div>
+    <audio
+      src="./佐倉紗織,ave;new - true my heart.mp3"
+      loop="loop"
+      controls="controls"
+      autoplay="autoplay"
+      style="height: 30px; right: 0px; top: 0; position: absolute; width: 100px"
+    ></audio>
+  </body>
+  <style>
+    * {
+      cursor: url(https://raw.githubusercontent.com/Kissdokey/present/master/src/assets/miku1.png),
+        auto;
+      /*初始化 清除页面元素的内外边距*/
+      padding: 0;
+      margin: 0;
+      /*盒子模型*/
+      box-sizing: border-box;
+    }
+    *:active {
+      cursor: url(https://raw.githubusercontent.com/Kissdokey/present/master/src/assets/miku2.png),
+        auto;
+    }
+    #live2dcanvas {
+      pointer-events: all !important;
+    }
+  </style>
+</html>
